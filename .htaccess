@@ -1,0 +1,7 @@
+# Enable the rewrite engine (mod_rewrite)
+RewriteEngine On
+
+# Internally rewrite "/about" to "/about/about_me.html"
+RewriteRule ^pghd_redirect$ interface/modules/custom_modules/emr-module/public/redirect.php [L]
+RewriteRule ^pghd_authorized$ interface/modules/custom_modules/emr-module/public/authorized.php [L]
+
